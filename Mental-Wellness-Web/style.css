@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200;600&family=Poppins:ital,wght@0,400;0,600;1,300;1,500&family=Raleway:ital,wght@0,100;0,300;0,400;0,600;1,100;1,400;1,500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', 
+    sans-serif;
+;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right:8% ;
+}
+.logo-container{
+    display: flex;
+
+}
+a:hover{
+    color: rgb(207, 98, 26);
+    opacity: 0.5;
+    transition: background-color 1s, color 1s;
+    /* background-color: rgb(21, 215, 21); */
+    
+}
+.button{
+    background-color: #ff6600;
+    color: white;
+    border: 1px solid #ff6600; 
+    width: 110px;
+    border-radius: 5px;
+    padding: 5px;
+}
+#logo{
+    height: 70px;
+    width: 70px;
+    border-radius: 30px;
+    /* -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px; */
+}
+.text{
+    margin-top: 5px;
+}
+#logo-text{
+    color: teal;
+    font-size: 2.5rem;
+}
+.text h6{
+    color: teal;
+    margin-bottom: 2px;
+}
+
+
+span{
+    color: #f9004d;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    color: teal;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    list-style: none;
+}
+
+.dropdwnlist{
+    display: block;
+}
+section{
+    background: wheat;
+}
+.team h2{
+    text-align: center; 
+    margin-top: 10px;
+    font-size: 2rem;
+    text-decoration: underline;
+    color: rgb(3, 172, 172);
+}
+.team h4{
+    color: teal;
+    margin-top: 5px;
+}
+.team p{
+    color: rgb(157, 152, 152);
+}
+.core-team{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    padding: 30px;
+}
+.professionals-team{
+   
+    flex-wrap: wrap; 
+    margin-top: 15px;
+    padding: 30px;
+}
+.first-row{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.second-row{
+    display: flex;
+    justify-content: space-around;
+}
+.research-team{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+    margin-top: 15px;
+    padding: 30px;
+}
+/* main body */
+.body-main{
+    width: 100%;
+    height: 120px;
+    background-color: wheat;
+}
+
+.body-main h2{
+    color: rgb(157, 152, 152);
+    padding: 10px 20px 10px 20px;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    /* bottom: -10px; */
+    font-size: 40px;
+}
+
+.body-main h2 em{
+    color: teal;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bg-ptxt{
+    color: rgb(123, 119, 119);
+    /* padding: 10px 20px 10px 20px; */
+    margin-left: 100px;
+    position: relative;
+    /* bottom: -2px; */
+    font-size: 20px;
+}
+
+.body-Image{
+    min-height: 70vh;
+    width: 100%;
+    background: linear-gradient(rgba(42, 41, 41, 0.6), rgba(27, 26, 26, 0.3)),
+    url(images/istockphoto-1130936727-170667a.jpg) center/cover no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 4rem;
+}
+
+.body-Image-txt{
+    color: white;
+    padding: 10px 20px 10px 20px;
+    margin: 20px;
+    position: relative;
+    bottom: -20px;
+    font-size: 35px;
+}
+
+.body-Image-txt span{
+    color: rgb(72, 203, 203);
+}
+
+.btn-counsel{
+    padding: 10px 20px 10px 20px;
+    position: relative;
+    bottom: -140px;
+    left: -700px;
+    background: teal;
+    border: none;
+    border-radius: 20px;
+    width: 400px;
+}
+
+.btn-counsel a{
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+.btn-counsel:hover{
+    background: none;
+    border: 2px solid teal;
+}
+
+
+ .mission{
+ text-align: center;
+ color: teal;
+ margin-top: 10px;
+}
+
+ .mission2{
+    display: flex;
+}
+.mission h2{
+    margin-top: 100px;
+    font-size: 5rem;
+}
+.mission2 img{
+    width:60% ;
+    padding: 10px;
+}
+
+ .mission-txt{
+    width: 200px;
+    float: right;
+    font-size: 2rem;
+    margin-left: 150px;
+    margin-top: 100px;
+    line-height: 40px;
+}
+
+.sub1{
+    display: flex;
+    justify-content: center;
+    background-color: teal;
+    color: white;
+    padding: 20px;
+}
+.sub1a{
+    margin-top: 20px;
+    padding: 20px;
+    width: 50%;
+}
+.sub1a h1{
+    font-size: 40px;
+}
+.sub1a h6{
+    font-size: 20px;
+}
+.sub1b {
+  padding-left: 200px;
+   position: relative; 
+}
+
+.phone img{
+    width: 180px;
+    position: absolute;
+    border-radius: 20px;
+    
+
+}
+.text-phone{
+    position: absolute;
+    text-align: center;
+    color: black;
+    margin-top: 60px;
+    padding: 20px;
+}
+.text-phone h3{
+    font-size: 17px;
+}
+.text1a{
+    text-align: center;
+    color: teal;
+    padding: 10px;
+    font-size: 20px;
+}
+.text1-info{
+    display: flex;
+    justify-content: space-around;
+}
+.text1b{
+   line-height: 30px;
+   padding: 10px;
+   color: grey;
+   width: 40%;
+}
+.text1-btn{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.text1-btn button{
+    padding: 20px;
+    border: none;
+    transform: scale(1);
+    background-color:#106eea;
+    color: white;
+    font-size: 1rem;
+    border-radius: 4px;
+    line-height: 0;
+}
+.text1-btn button:hover{
+    background-color: teal;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 250ms;
+}
+
+.text2{
+    display: flex; 
+    justify-content: space-around;
+    background: wheat; 
+    padding: 20px;
+}
+.text2 h1{
+    color: teal;
+    font-size: 2rem;
+}
+.text2 h3{
+   color:rgb(245, 104, 52);
+   font-size: 1.2rem;
+}
+.text2 p{
+   color: grey; 
+}
+.text2a, .text2b, .text2c{
+    width: 30%;
+}
+
+.text3{
+    background-color: teal;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    gap: 20px;
+}
+.text3a{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 10px;
+}
+.text3b{
+    line-height: 40px;
+    font-size: 20px;
+}
+.text3 button{
+    height: 50px;
+    width: 150px ;
+    color: whitesmoke;
+    background-color: #106eea;
+    border-radius: 4px;
+    border: transparent;
+    transform: scale(1);
+}
+.text3 button:hover{
+    cursor: pointer;
+    border:2px solid white;
+    color: white;
+    transform: scale(1.1);
+    transition: 250ms;
+}
+
+.text4 {
+    background-color:rgb(247, 242, 242);
+    text-align: center;
+    padding: 20px 0;
+}
+.text4 h2{
+    color:rgb(245, 104, 52);;
+}
+.text4 h4{
+    line-height: 60px;
+    width: 50%;
+    margin-left: 380px;
+    color: teal;
+    font-size: 1.8rem;
+    
+}
+.text4 h5{
+    color: grey;
+}
+.text4 a{
+    color:rgb(245, 104, 52);;
+}
+
+.text5{
+    background-color:wheat;
+    padding: 20px 0;
+}
+.text5a{
+    text-align: center;
+    color: teal;
+    font-size: 2rem;
+}
+.text5b{
+    color: grey;
+    line-height: 20px;
+    margin-left: 20px;
+}
+
+
+.text6{
+    display: flex;
+    gap: 80px;
+    text-align: center;
+    line-height: 30px;
+    padding: 20px;
+    background-color:rgb(247, 242, 242);
+}
+.text6 h2{
+    color:rgb(245, 104, 52);
+}
+.text6 p{
+    color: grey;
+}
+.text6b{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.text6b h2{
+    color:rgb(245, 104, 52);
+    font-size: 5rem;
+}
+.text6b p{
+    font-size: 1.5rem;
+}
+.text6b img{
+    width: 300px;
+}
+
+/* Volunteer page */
+.donate{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+.donate-img img{
+    width: 300px;
+}
+
+
+
+/* footer */
+.footerCon{
+    width: 100%;
+    margin-top: 400px;
+    display: flex;
+    padding: 40px 40px;
+    justify-content: space-between;
+    height: 80vh;
+    background: lightgrey;
+}
+.footerCon .rightside{
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footerCon .rightside .copywite span.copy{
+    color: #242424;
+    font-size:17px;
+    margin-right: 8px;
+}
+.footerCon .rightside .copywite span.txt2{
+    color: #242424;
+    font-size:17px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.footerCon .rightside .number span{
+    color: rgb(129, 122, 122);
+    font-size: 18px;
+    font-weight: 500;
+}
+.footerCon .rightside .txt p{
+    color: rgb(129, 122, 122);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* center side */
+.footerCon .centerside{
+    display: flex;
+    width: 33.3%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footerCon .centerside .infoside .des, .Actionside .des{
+    color: #242424;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.footerCon .centerside .infoside  ul.link, .Actionside ul.link{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 8px;
+}
+.footerCon .centerside .infoside  ul.link li a, .Actionside ul.link li a{
+       font-size: 18px;
+       color: rgb(236, 233, 233);
+}
+.footerCon .centerside .infoside  ul.link li a:hover, .Actionside ul.link li a:hover{
+       color:rgb(129, 122, 122) ;
+}
+.footerCon .centerside .legal .legalC{
+       margin-bottom: 20px;
+       color: #242424;
+       font-size: 18px;
+       font-weight: 800;
+   
+}
+/* left side */
+
+.footerCon .leftside{
+    width: 33.3%;
+}
+.footerCon .leftside .socialMedia{
+    text-align: center;
+    margin: 0 auto;
+}
+.footerCon .leftside .socialMedia span.item{
+    font-size: 19px;
+    margin: 3px;
+    color: #242424;
+}
+.footerCon .leftside  .signUp{
+    text-align: center;
+    margin-top: 40px;
+}
+.footerCon .leftside  .signUp p{
+    color: #242424;
+    font-size: 15px;
+}
+.footerCon .leftside .button{
+    text-align: center;
+    margin-top: 40px;
+}
+.footerCon .leftside .buttoncontainer input{
+    width: 250px;
+    padding: 17px;
+    margin-left: 60px;
+}
+.footerCon .leftside .buttoncontainer input::placeholder{
+    font-size: 17px;
+    color:  rgb(197, 192, 192);
+}
+.footerCon .leftside .buttoncontainer button{
+    padding: 17px;
+    font-size: 15px;
+    color:  rgb(230, 228, 228);
+    background-color: #106eea;
+    outline: none;
+    border: none;
+    width: 120px;
+    cursor: pointer;
+    border-radius: 4px;
+    transform: scale(1);
+}
+.footerCon .leftside .buttoncontainer button:hover{
+    transform: scale(1.1);
+    transition: 250ms;
+}
