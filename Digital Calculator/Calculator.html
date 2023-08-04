@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="result-wrapper">
+            <p class="txt">CITI.ZETV CT-9914D-II <br>CHECK&CORRECT CALCULATOR
+               <span><input type="text" class="scrn"></span>
+                14 <br> DIGITS
+
+            </p>
+            <div class="result-cover">
+                <input type="text" id="Result" >
+            </div>
+            <h3 class="txt-2">LARGE DISPLAY</h3>
+        </div>
+        <div class="button-body">
+            <table border="0">
+                <tr>
+                    <td colspan="2" ><input type="button" value="AC" id="round-1" onclick="Clr()"></td>
+                    <td><input type="button" value="AUTO REPLAY" class="blk-2" onclick="Display()"></td>
+                    <td><input type="button" value="CHECK-L" class="blk-2" onclick="Display()"></td>
+                    <td><input type="button" value="CHECK-R" class="blk-2" onclick="Display()"></td>
+                    <td><input type="button" value="OFF" id="round-2" onclick="Clr()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="GT" class="blk-2" onclick="Display('GT')"></td>
+                    <td><input type="button" value="CORRECT" class="blk-2" onclick="Display()"></td>
+                    <td><input type="button" value="MRC" class="blk-2" onclick="Display()"></td>
+                    <td><input type="button" value="M-=" class="blk-2" onclick="Display()"></td>
+                    <td><input type="button" value="M+=" class="blk-2" onclick="Display()"></td>
+                    <td><input type="button" value="MU" class="blk-2" onclick="Display()"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="&rarr;" class="blk-2" onclick="Display('&rarr;')"></td>
+                    <td><input type="button" value="7" class="blk-1" onclick="Display('7')"></td>
+                    <td><input type="button" value="8" class="blk-1" onclick="Display('8')"></td>
+                    <td><input type="button" value="9" class="blk-1" onclick="Display('9')"></td>
+                    <td><input type="button" value="%" class="blk-2" onclick="Display('%')"></td>  <!--ALT + 37 for the symbol-->
+                    <td><input type="button" value="&radic;" class="blk-2" onclick="Display('&radic;')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="+/_" class="blk-2" onclick="Display('+/_')"></td>
+                    <td><input type="button" value="4" class="blk-1" onclick="Display('4')"></td>
+                    <td><input type="button" value="5" class="blk-1" onclick="Display('5')"></td>
+                    <td><input type="button" value="6" class="blk-1" onclick="Display('6')"></td>
+                    <td><input type="button" value="*" class="blk-2" onclick="Display('*')"></td>
+                    <td><input type="button" value="÷" class="blk-2"  onclick="Display('÷')"></td>  <!--ALT + 246 for the symbol-->
+                </tr>
+                <tr>
+                    <td><input type="button" value="CE" class="blk-2" onclick="Clr()"></td>
+                    <td><input type="button" value="1" class="blk-1" onclick="Display('1')"></td>
+                    <td><input type="button" value="2" class="blk-1" onclick="Display('2')"></td>
+                    <td><input type="button" value="3" class="blk-2"  onclick="Display('3')"></td>
+                    <td rowspan="2" id="chn"><input type="button" value="+" id="round-3" class="blk-2" onclick="Display('+')"></td>
+                    <td><input type="button" value="&minus;" class="blk-2" onclick="Display('&minus;')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="0" class="blk-1" onclick="Display('0')"></td>
+                    <td><input type="button" value="00" class="blk-1" onclick="Display('00')"></td>
+                    <td><input type="button" value="000" class="blk-1" onclick="Display('000')"></td>
+                    <td><input type="button" value="." class="blk-2" onclick="Display('.')"></td>
+                    <td><input type="button" value="=" class="blk-2" onclick="Equate()"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
